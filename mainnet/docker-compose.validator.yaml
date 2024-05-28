@@ -2,7 +2,7 @@ version: "3"
 services:
   bkc-node:
     container_name: bkc-node
-    image: bitkubchainorg/node:2.1.0
+    image: bitkubchainorg/node:latest
     entrypoint: /usr/bin/docker-entrypoint.sh
     networks:
       - node_network
