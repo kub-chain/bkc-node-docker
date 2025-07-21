@@ -1,5 +1,5 @@
 # KUB Chain - Lausanne Upgrade
-Easy run Bitkub Chain Node
+Easy run KUB Chain Node
 
 
 ![Screenshot](images/screenshot-1.png "Grafana")
