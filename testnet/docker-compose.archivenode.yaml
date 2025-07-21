@@ -1,4 +1,4 @@
-version: "3"
+
 services:
   bkc-node:
     container_name: bkc-node
@@ -7,6 +7,7 @@ services:
     networks:
       - node_network
     command:
+      - "--ipcpath=/tmp/geth.ipc"
       - "--config=/etc/bkc/config.toml"
       - "--datadir=/var/lib/bkc/data"
       - "--ethstats=bkc-testnet-archivenode:WelcomeToBitkubChain@bkc-stats:8090"
@@ -82,7 +83,7 @@ services:
 
   telegraf:
     container_name: telegraf
-    image: telegraf
+    image: telegraf:1.28
     restart: always
     networks:
       - node_network
@@ -100,7 +101,7 @@ services:
 
   grafana:
     container_name: grafana
-    image: grafana/grafana
+    image: grafana/grafana:10.4.19
     networks:
       - node_network
     depends_on:
