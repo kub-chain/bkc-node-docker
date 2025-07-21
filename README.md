@@ -1,4 +1,4 @@
-# Bitkub Chain (PoS) main Network
+# KUB Chain - Lausanne Upgrade
 Easy run Bitkub Chain Node
 
 

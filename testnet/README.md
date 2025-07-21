@@ -1,4 +1,4 @@
-# Bitkub Chain (PoS) test Network
+# KUB Chain - Test Network
 
 
 ### Clone
