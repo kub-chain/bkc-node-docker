@@ -6,12 +6,6 @@ Easy run KUB Chain Node
 
 ![Screenshot](images/screenshot-2.png "Stats")
 
-### Clone
-```bash
-$ git clone https://github.com/kub-chain/bkc-node-docker.git
-$ cd bkc-node-docker/mainnet
-```
-
 ### Running a Validator
 ```bash
 # Run 
