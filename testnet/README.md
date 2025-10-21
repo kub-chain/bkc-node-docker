@@ -3,7 +3,7 @@
 
 ### Clone
 ```bash
-$ git clone https://github.com/bitkub-chain/bkc-node-docker.git
+$ git clone https://github.com/kub-chain/bkc-node-docker.git
 $ cd bkc-node-docker/testnet
 ```
 
