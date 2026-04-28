@@ -7,6 +7,13 @@ $ git clone https://github.com/kub-chain/bkc-node-docker.git
 $ cd bkc-node-docker/testnet
 ```
 
+### Setup
+Create the secrets directory before running any node for the first time. This directory is required by the entrypoint script to store the keystore password and account files.
+
+```bash
+$ mkdir -p secret/keystore
+```
+
 ### Running a Validator
 ```bash
 # Run 

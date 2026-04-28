@@ -1,5 +1,13 @@
 mainnet/data
-mainnet/serect
+mainnet/secret/*
+!mainnet/secret/.gitkeep
+!mainnet/secret/keystore/
+mainnet/secret/keystore/*
+!mainnet/secret/keystore/.gitkeep
 mainnet/motd
 testnet/data
-testnet/serect
+testnet/secret/*
+!testnet/secret/.gitkeep
+!testnet/secret/keystore/
+testnet/secret/keystore/*
+!testnet/secret/keystore/.gitkeep
