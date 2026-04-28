@@ -2,7 +2,7 @@
 services:
   bkc-node:
     container_name: bkc-node
-    image: bitkubchainorg/node:2.3.0
+    image: bitkubchainorg/node:2.4.0
     entrypoint: /usr/bin/docker-entrypoint.sh
     networks:
       - node_network
@@ -28,8 +28,8 @@ services:
       - "./docker-entrypoint.sh:/usr/bin/docker-entrypoint.sh"
       - "./data/geth:/var/lib/bkc/data"
       - "./config:/etc/bkc/"
-      - "./serect/:/etc/bkc/serect/"
-      - "./serect/keystore/:/var/lib/bkc/data/keystore/"
+      - "./secret/:/etc/bkc/secret/"
+      - "./secret/keystore/:/var/lib/bkc/data/keystore/"
     depends_on:
       - bkc-stats
       - influxdb

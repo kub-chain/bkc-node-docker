@@ -1,9 +1,9 @@
 #!/bin/sh
 
-if [ ! -f /etc/bkc/serect/password.txt ]; then
+if [ ! -f /etc/bkc/secret/password.txt ]; then
     echo "Ramdom Password!"
-    echo $RANDOM | md5sum | head -c 32 > /etc/bkc/serect/password.txt
-    geth --datadir /var/lib/bkc/data account new --password /etc/bkc/serect/password.txt
+    echo $RANDOM | md5sum | head -c 32 > /etc/bkc/secret/password.txt
+    geth --datadir /var/lib/bkc/data account new --password /etc/bkc/secret/password.txt
 fi
 
 if [ ! -d /var/lib/bkc/data/geth ]; then
